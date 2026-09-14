@@ -1,0 +1,899 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACM Mits | Student Chapter - Madhav Institute of Technology and Science, Gwalior</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ACM Mits Student Chapter at Madhav Institute of Technology and Science (MITS), Gwalior. Code. Create. Connect. Premier student developer & technology community.">
+  <meta name="keywords" content="ACM Mits, MITS Gwalior, Student Chapter, Computer Science, Hackathons, Coding, Developers, Tech Community">
+  <meta name="author" content="ACM Mits Student Chapter">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ACM Mits Student Chapter | MITS Gwalior">
+  <meta property="og:description" content="Code. Create. Connect. Premier Student Technology Community at MITS Gwalior.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Outfit (Display) & Inter (Sans) & JetBrains Mono (Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. FLOATING NAVBAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand">
+        <div class="logo-badge">ACM</div>
+        <div class="brand-text">
+          <span class="brand-name">ACM Mits</span>
+          <span class="brand-sub">STUDENT CHAPTER</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#activities" class="nav-link">Activities</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="nav-cta">
+        <a href="#join" class="btn btn-primary btn-sm open-join-modal">Join Us</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--border-subtle);">
+      <div style="display:flex; align-items:center; gap:0.6rem;">
+        <div class="logo-badge" style="width:32px; height:32px; font-size:0.8rem;">ACM</div>
+        <span style="font-weight:800; font-size:1.15rem; color:var(--text-primary); font-family:var(--font-display);">ACM Mits</span>
+      </div>
+      <span style="font-size:0.7rem; color:var(--text-muted); font-family:var(--font-mono);">MITS GWALIOR</span>
+    </div>
+    <a href="#about" class="nav-link">About Us</a>
+    <a href="#activities" class="nav-link">Activities & Tracks</a>
+    <a href="#events" class="nav-link">Flagship Events</a>
+    <a href="#team" class="nav-link">Leadership Team</a>
+    <a href="#gallery" class="nav-link">Past Gallery</a>
+    <a href="#contact" class="nav-link">Contact & Inquiries</a>
+    <a href="#join" class="btn btn-primary open-join-modal" style="margin-top:1.5rem; width:100%;">Join ACM Mits</a>
+  </aside>
+
+  <!-- =========================================================================
+       2. HERO SECTION (Clean, Minimal, Professional Technology Community)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <!-- Subtle Animated Grid & Particle Canvas -->
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-ambient-glow glow-purple"></div>
+    <div class="hero-ambient-glow glow-blue"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- Chapter Badge -->
+        <div class="hero-chapter-pill">
+          <span class="dot"></span>
+          <span>ACM Student Chapter &bull; MITS Gwalior</span>
+        </div>
+
+        <!-- Chapter Title & Branding -->
+        <div class="hero-brand-block">
+          <span class="hero-subtitle">MADHAV INSTITUTE OF TECHNOLOGY AND SCIENCE</span>
+          <h1 class="hero-title">
+            ACM <span class="gradient-text">MITS</span>
+          </h1>
+        </div>
+        
+        <!-- Tagline -->
+        <div class="hero-tagline gradient-text-accent">
+          "Code. Create. Connect."
+        </div>
+
+        <!-- Supporting Text -->
+        <p class="hero-description">
+          Empowering students through technology, innovation, collaboration and continuous learning. The premier student-led developer and computer science community at MITS Gwalior.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-actions">
+          <a href="#events" class="btn btn-primary">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            Explore Events
+          </a>
+          <a href="#join" class="btn btn-secondary open-join-modal">
+            Join Us
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Community Focus Tags -->
+        <div class="hero-focus-tags">
+          <span class="focus-tag">Hackathons</span>
+          <span class="focus-divider">&bull;</span>
+          <span class="focus-tag">Technical Workshops</span>
+          <span class="focus-divider">&bull;</span>
+          <span class="focus-tag">Competitive Coding</span>
+          <span class="focus-divider">&bull;</span>
+          <span class="focus-tag">Open Source & Innovation</span>
+        </div>
+
+        <!-- Metric Ribbon -->
+        <div class="hero-ribbon">
+          <div class="hero-ribbon-item">
+            <span class="ribbon-val">15+</span>
+            <span class="ribbon-label">Workshops</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="ribbon-val">500+</span>
+            <span class="ribbon-label">Members</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="ribbon-val">10+</span>
+            <span class="ribbon-label">Hackathons</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="ribbon-val">25+</span>
+            <span class="ribbon-label">Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. ABOUT SECTION
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          About Chapter
+        </div>
+        <h2 class="section-title">Driving Tech Excellence at MITS</h2>
+        <p class="section-description">
+          ACM Mits Student Chapter is a premier student technology community at Madhav Institute of Technology and Science, Gwalior. We foster computing innovation, peer learning, and real-world problem solving.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Main Intro Card -->
+        <div class="glass-card about-intro-card">
+          <div>
+            <h3 style="font-size:1.75rem; margin-bottom:1.1rem;">Welcome to ACM Mits</h3>
+            <p class="about-intro-text">
+              Dedicated to advancing computing as a science and a profession. We bridge the gap between academic theory and industry engineering through hands-on technical workshops, competitive programming, hackathons, and collaborative software projects.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="about-highlight-item">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              <div>
+                <h4>Developer First</h4>
+                <p>Focus on code, architecture & practical skills.</p>
+              </div>
+            </div>
+
+            <div class="about-highlight-item">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              <div>
+                <h4>Inclusive Community</h4>
+                <p>Open for all engineering disciplines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission & Vision Stack -->
+        <div class="mission-vision-container">
+          <!-- Mission Card -->
+          <div class="glass-card mv-card">
+            <div class="mv-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <span class="section-tag" style="margin-bottom:0.5rem; padding:0.25rem 0.75rem; font-size:0.75rem;">Our Mission</span>
+            <h3>Build, Collaborate & Learn</h3>
+            <p>
+              "To build a community where students learn, collaborate and create meaningful technology-driven solutions."
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="glass-card mv-card vision">
+            <div class="mv-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <span class="section-tag" style="margin-bottom:0.5rem; padding:0.25rem 0.75rem; font-size:0.75rem; border-color:var(--accent-cyan-glow); color:var(--accent-cyan);">Our Vision</span>
+            <h3>Inspire Tech Innovators</h3>
+            <p>
+              "To inspire the next generation of developers, problem solvers and technology innovators."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. STATS / ACHIEVEMENTS SECTION (Editable Placeholders)
+       ========================================================================= -->
+  <section class="section" id="stats" style="background:linear-gradient(180deg, transparent 0%, rgba(139, 92, 246, 0.04) 50%, transparent 100%);">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:3rem;">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          Chapter Metrics
+        </div>
+        <h2 class="section-title">Impacting Student Growth</h2>
+        <p class="section-description">
+          Highlighting chapter milestones and ongoing technical initiatives at MITS Gwalior.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <!-- Stat 1 -->
+        <div class="glass-card stat-card">
+          <div class="stat-icon">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="stat-number" data-count="25">25+</div>
+          <div class="stat-label">Events & Competitions</div>
+          <div class="stat-disclaimer">
+            <span class="placeholder-badge">Editable Metric</span>
+          </div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="glass-card stat-card">
+          <div class="stat-icon">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <div class="stat-number" data-count="500">500+</div>
+          <div class="stat-label">Chapter Members</div>
+          <div class="stat-disclaimer">
+            <span class="placeholder-badge">Editable Metric</span>
+          </div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="glass-card stat-card">
+          <div class="stat-icon">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <div class="stat-number" data-count="15">15+</div>
+          <div class="stat-label">Hands-on Workshops</div>
+          <div class="stat-disclaimer">
+            <span class="placeholder-badge">Editable Metric</span>
+          </div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="glass-card stat-card">
+          <div class="stat-icon">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <div class="stat-number" data-count="30">30+</div>
+          <div class="stat-label">Open Source Projects</div>
+          <div class="stat-disclaimer">
+            <span class="placeholder-badge">Editable Metric</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. ACTIVITIES SECTION ("What We Do")
+       ========================================================================= -->
+  <section class="section" id="activities">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.595 15.12a2 2 0 00-1.808.547l-1.09 1.09a2 2 0 000 2.83l.564.564a2 2 0 002.83 0l.968-.968a6 6 0 013.86-.517l.318.158a6 6 0 003.86-.517l2.387.477a2 2 0 001.022.547l1.09 1.09a2 2 0 002.83 0l.564-.564a2 2 0 000-2.83l-1.09-1.09z"/></svg>
+          What We Do
+        </div>
+        <h2 class="section-title">Core Chapter Activities</h2>
+        <p class="section-description">
+          Explore how ACM Mits engages students through diverse tech tracks, skill-building sprints, and community initiatives.
+        </p>
+      </div>
+
+      <div class="activities-grid">
+        <!-- Activity 1 -->
+        <div class="glass-card activity-card">
+          <div class="activity-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3 class="activity-title">Coding & Competitive Programming</h3>
+          <p class="activity-desc">
+            Regular coding contests, DSA study groups, dynamic programming bootcamps, and preparation for ICPC and Global Code Jam.
+          </p>
+          <div class="activity-features">
+            <span class="activity-tag">DSA</span>
+            <span class="activity-tag">Competitive Coding</span>
+            <span class="activity-tag">ICPC Prep</span>
+          </div>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="glass-card activity-card">
+          <div class="activity-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <h3 class="activity-title">Technical Workshops</h3>
+          <p class="activity-desc">
+            Hands-on technical sessions covering Web Development, Cloud Infrastructure, Machine Learning, Cybersecurity, and Git.
+          </p>
+          <div class="activity-features">
+            <span class="activity-tag">Full-Stack</span>
+            <span class="activity-tag">Cloud</span>
+            <span class="activity-tag">AI/ML</span>
+          </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="glass-card activity-card">
+          <div class="activity-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="activity-title">Hackathons & Sprints</h3>
+          <p class="activity-desc">
+            36-hour hackathons enabling student teams to build, pitch, and deploy innovative hardware/software solutions.
+          </p>
+          <div class="activity-features">
+            <span class="activity-tag">36-Hr Code Sprint</span>
+            <span class="activity-tag">Mentorship</span>
+            <span class="activity-tag">Prizes</span>
+          </div>
+        </div>
+
+        <!-- Activity 4 -->
+        <div class="glass-card activity-card">
+          <div class="activity-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="activity-title">Technical Talks</h3>
+          <p class="activity-desc">
+            Keynotes and tech talks by industry software architects, academic researchers, and distinguished engineering alumni.
+          </p>
+          <div class="activity-features">
+            <span class="activity-tag">Industry Keynotes</span>
+            <span class="activity-tag">Alumni Sessions</span>
+            <span class="activity-tag">Career Guidance</span>
+          </div>
+        </div>
+
+        <!-- Activity 5 -->
+        <div class="glass-card activity-card">
+          <div class="activity-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 01-2 2h-0a2 2 0 01-2-2v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="activity-title">Projects & Innovation</h3>
+          <p class="activity-desc">
+            Collaborative open-source projects, campus automation tools, and research papers published under ACM mentorship.
+          </p>
+          <div class="activity-features">
+            <span class="activity-tag">Open Source</span>
+            <span class="activity-tag">GitHub Teams</span>
+            <span class="activity-tag">Research</span>
+          </div>
+        </div>
+
+        <!-- Activity 6 -->
+        <div class="glass-card activity-card">
+          <div class="activity-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="activity-title">Community & Peer Learning</h3>
+          <p class="activity-desc">
+            Peer-to-peer mentoring, technical discussion forums, project reviews, and community networking sessions.
+          </p>
+          <div class="activity-features">
+            <span class="activity-tag">Peer Mentoring</span>
+            <span class="activity-tag">Code Review</span>
+            <span class="activity-tag">Networking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. EVENTS SHOWCASE SECTION
+       ========================================================================= -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Events Showcase
+        </div>
+        <h2 class="section-title">Workshops, Contests & Keynotes</h2>
+        <p class="section-description">
+          Stay tuned with upcoming chapter hackathons or explore past flagship events organized at MITS Gwalior.
+        </p>
+      </div>
+
+      <!-- Events Filter & Live Search Bar -->
+      <div class="events-filter-bar">
+        <div class="events-tabs">
+          <button class="filter-tab active" data-filter="all">All Events</button>
+          <button class="filter-tab" data-filter="hackathon">Hackathons</button>
+          <button class="filter-tab" data-filter="workshop">Workshops</button>
+          <button class="filter-tab" data-filter="contest">Coding Contests</button>
+          <button class="filter-tab" data-filter="talk">Tech Talks</button>
+          <button class="filter-tab" data-filter="seminar">Seminars</button>
+        </div>
+
+        <div class="events-search-box">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="events-search" placeholder="Search events..." aria-label="Search events">
+        </div>
+      </div>
+
+      <!-- Events Grid Container -->
+      <div class="events-grid" id="events-grid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. TEAM SECTION (Editable Placeholders)
+       ========================================================================= -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          Chapter Leadership
+        </div>
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-description">
+          The passionate student leaders and faculty mentor driving ACM Mits Student Chapter forward.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Faculty Coordinator -->
+        <div class="glass-card team-card">
+          <div class="team-avatar-wrapper blank-avatar">
+            <div class="blank-avatar-inner">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+          </div>
+          <span class="team-role-badge">Faculty Coordinator</span>
+          <h3 class="team-name">[Faculty Mentor Name]</h3>
+          <p class="team-dept">Department of CSE, MITS Gwalior</p>
+          <div class="team-socials">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+          </div>
+          <div style="margin-top:1.2rem;"><span class="placeholder-badge">Blank Profile Placeholder</span></div>
+        </div>
+
+        <!-- Chapter Chair -->
+        <div class="glass-card team-card">
+          <div class="team-avatar-wrapper blank-avatar">
+            <div class="blank-avatar-inner">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+          </div>
+          <span class="team-role-badge">Chapter Chair</span>
+          <h3 class="team-name">[Student Chair Name]</h3>
+          <p class="team-dept">Computer Science & Engineering</p>
+          <div class="team-socials">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
+          </div>
+          <div style="margin-top:1.2rem;"><span class="placeholder-badge">Blank Profile Placeholder</span></div>
+        </div>
+
+        <!-- Vice Chair -->
+        <div class="glass-card team-card">
+          <div class="team-avatar-wrapper blank-avatar">
+            <div class="blank-avatar-inner">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+          </div>
+          <span class="team-role-badge">Vice Chair</span>
+          <h3 class="team-name">[Student Vice Chair]</h3>
+          <p class="team-dept">Information Technology</p>
+          <div class="team-socials">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
+          </div>
+          <div style="margin-top:1.2rem;"><span class="placeholder-badge">Blank Profile Placeholder</span></div>
+        </div>
+
+        <!-- Technical Lead -->
+        <div class="glass-card team-card">
+          <div class="team-avatar-wrapper blank-avatar">
+            <div class="blank-avatar-inner">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+          </div>
+          <span class="team-role-badge">Technical Lead</span>
+          <h3 class="team-name">[Tech Lead Name]</h3>
+          <p class="team-dept">Computer Science & Engineering</p>
+          <div class="team-socials">
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+          </div>
+          <div style="margin-top:1.2rem;"><span class="placeholder-badge">Blank Profile Placeholder</span></div>
+        </div>
+
+        <!-- Events Lead -->
+        <div class="glass-card team-card">
+          <div class="team-avatar-wrapper blank-avatar">
+            <div class="blank-avatar-inner">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+          </div>
+          <span class="team-role-badge">Events Lead</span>
+          <h3 class="team-name">[Events Lead Name]</h3>
+          <p class="team-dept">Information Technology</p>
+          <div class="team-socials">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+          <div style="margin-top:1.2rem;"><span class="placeholder-badge">Blank Profile Placeholder</span></div>
+        </div>
+
+        <!-- Design / Media Lead -->
+        <div class="glass-card team-card">
+          <div class="team-avatar-wrapper blank-avatar">
+            <div class="blank-avatar-inner">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+          </div>
+          <span class="team-role-badge">Design & Media Lead</span>
+          <h3 class="team-name">[Design Lead Name]</h3>
+          <p class="team-dept">Computer Science & Engineering</p>
+          <div class="team-socials">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+          <div style="margin-top:1.2rem;"><span class="placeholder-badge">Blank Profile Placeholder</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. GALLERY SECTION
+       ========================================================================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Moments & Memories
+        </div>
+        <h2 class="section-title">Past Events Gallery</h2>
+        <p class="section-description">
+          Moments captured across workshops, hackathons, guest keynotes, and community tech summits at MITS.
+        </p>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="events-filter-bar" style="justify-content:center;">
+        <div class="events-tabs gallery-tabs">
+          <button class="filter-tab active" data-filter="all">All Photos</button>
+          <button class="filter-tab" data-filter="workshops">Workshops</button>
+          <button class="filter-tab" data-filter="hackathons">Hackathons</button>
+          <button class="filter-tab" data-filter="coding">Coding Contests</button>
+          <button class="filter-tab" data-filter="talks">Tech Talks</button>
+          <button class="filter-tab" data-filter="community">Community</button>
+        </div>
+      </div>
+
+      <!-- Gallery Image Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <span class="placeholder-badge">[Official MITS & Chapter Event Archives Placeholder - Ready for Real Event Uploads]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. JOIN CTA SECTION
+       ========================================================================= -->
+  <section class="section join-section" id="join">
+    <div class="container">
+      <div class="glass-card join-banner">
+        <div class="join-content">
+          <span class="section-tag" style="margin-bottom:1.4rem;">ACM Mits Membership</span>
+          <h2 class="join-title">Ready to Build the Future?</h2>
+          <p class="join-text">
+            Join ACM Mits and connect with students who are passionate about technology, programming and innovation at Madhav Institute of Technology and Science, Gwalior.
+          </p>
+
+          <div class="join-actions">
+            <button class="btn btn-primary open-join-modal">
+              Join the Chapter
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. CONTACT SECTION (Editable Placeholders)
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Get In Touch
+        </div>
+        <h2 class="section-title">Connect with ACM Mits</h2>
+        <p class="section-description">
+          Have questions about membership, events, or sponsorship? Reach out to our executive board.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-info-cards">
+          <!-- Email Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Official Email</h4>
+              <p style="font-family:var(--font-mono); color:var(--accent-cyan); font-size:1rem;">acm.mits@mitsgwalior.in <span class="placeholder-badge">Editable</span></p>
+              <p style="font-size:0.85rem; color:var(--text-dim); margin-top:0.3rem;">For official inquiries, partnerships & chapter outreach</p>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Campus Location</h4>
+              <p style="font-weight:600; color:var(--text-primary);">Madhav Institute of Technology and Science (MITS)</p>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">Gola ka Mandir, Gwalior, Madhya Pradesh 474005</p>
+            </div>
+          </div>
+
+          <!-- Social Handles Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Social Networks</h4>
+              <div style="display:flex; gap:0.85rem; margin-top:0.75rem;">
+                <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="Instagram Placeholder"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn Placeholder"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                <a href="https://github.com" target="_blank" class="social-icon-btn" title="GitHub Placeholder"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Inquiry Form Card -->
+        <div class="glass-card contact-form-card">
+          <h3 style="font-size:1.5rem; margin-bottom:1.6rem;">Send a Direct Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="student@mitsgwalior.in" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-msg">Message</label>
+              <textarea id="contact-msg" class="form-textarea" placeholder="How can ACM Mits collaborate or help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <div class="logo-badge">ACM</div>
+            <div class="brand-text">
+              <span class="brand-name">ACM Mits</span>
+              <span class="brand-sub">STUDENT CHAPTER</span>
+            </div>
+          </a>
+          <p>
+            "Code. Create. Connect."<br>
+            Official ACM Student Chapter at Madhav Institute of Technology and Science (MITS), Gwalior.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="#about">About ACM Mits</a>
+            <a href="#activities">Activities & Tracks</a>
+            <a href="#events">Flagship Events</a>
+            <a href="#team">Leadership Team</a>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="#gallery">Past Gallery</a>
+            <a href="#join">Membership Form</a>
+            <a href="#contact">Contact Support</a>
+            <a href="https://www.acm.org" target="_blank" rel="noopener">Global ACM Portal</a>
+          </div>
+        </div>
+
+        <!-- Contact Links -->
+        <div>
+          <h4 class="footer-title">Institution</h4>
+          <div class="footer-links">
+            <span style="color:var(--text-muted); font-size:0.92rem;">MITS Gwalior</span>
+            <span style="color:var(--text-muted); font-size:0.85rem;">Gola ka Mandir, Gwalior, MP</span>
+            <a href="https://web.mitsgwalior.in" target="_blank" rel="noopener" style="color:var(--accent-cyan); font-size:0.88rem; margin-top:0.5rem; display:inline-block;">Official MITS Website &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ACM Mits Student Chapter | Madhav Institute of Technology and Science (MITS), Gwalior. All rights reserved.
+        </div>
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <a href="#hero" class="back-to-top" aria-label="Back to Top">
+            <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. MODAL DIALOGS
+       ========================================================================= -->
+
+  <!-- Event Detail Modal -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="event-modal-close" aria-label="Close Modal">
+        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div id="event-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="modal-content lightbox-content" style="max-width:900px; padding:2rem; text-align:center; position:relative;">
+      <button class="modal-close" id="lightbox-close" aria-label="Close Lightbox">
+        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Lightbox Image Container with Nav Arrows -->
+      <div class="lightbox-img-wrapper" style="position:relative; margin-bottom:1.5rem;">
+        <button class="lightbox-nav-btn prev-btn" id="lightbox-prev" aria-label="Previous Image">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        
+        <img id="lightbox-img" src="" alt="" style="max-height:65vh; width:100%; object-fit:contain; border-radius:var(--radius-md); border:1px solid var(--border-subtle); background:#060a14;">
+
+        <button class="lightbox-nav-btn next-btn" id="lightbox-next" aria-label="Next Image">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Metadata & Info -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <div style="text-align:left;">
+          <span id="lightbox-tag" class="section-tag" style="margin-bottom:0.4rem; padding:0.25rem 0.75rem; font-size:0.75rem;"></span>
+          <h3 id="lightbox-title" style="font-size:1.45rem; margin-bottom:0.25rem;"></h3>
+          <p id="lightbox-caption" style="font-size:0.9rem; color:var(--text-muted);"></p>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <span id="lightbox-counter" class="placeholder-badge" style="font-size:0.82rem; padding:0.3rem 0.75rem; border-style:solid; border-color:rgba(139,92,246,0.4); background:rgba(139,92,246,0.12); color:#c4b5fd;">1 / 8</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Join Us Modal -->
+  <div class="modal-overlay" id="join-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="join-modal-close" aria-label="Close Join Form">
+        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div style="margin-bottom:1.8rem; text-align:center;">
+        <span class="section-tag">Join Chapter</span>
+        <h2 style="font-size:2rem; margin-top:0.5rem;">Become an ACM Mits Member</h2>
+        <p style="color:var(--text-muted); font-size:0.95rem;">Join our community of developers, problem solvers, and innovators.</p>
+      </div>
+
+      <form id="join-form">
+        <div class="form-group">
+          <label class="form-label" for="join-name">Full Name</label>
+          <input type="text" id="join-name" class="form-input" placeholder="e.g. Ananya Gupta" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="join-email">College Email ID</label>
+          <input type="email" id="join-email" class="form-input" placeholder="student@mitsgwalior.in" required>
+        </div>
+        <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem;">
+          <div class="form-group">
+            <label class="form-label" for="join-branch">Branch</label>
+            <input type="text" id="join-branch" class="form-input" placeholder="CSE / IT / ECE" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="join-year">Year of Study</label>
+            <input type="text" id="join-year" class="form-input" placeholder="1st / 2nd / 3rd / 4th" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="join-interests">Primary Tech Interests</label>
+          <input type="text" id="join-interests" class="form-input" placeholder="Web Dev, CP, Machine Learning, Open Source...">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1rem;">
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
